@@ -1,0 +1,102 @@
+<html lang="pt-br">
+    <head>
+        <title>O filme o senhor dos anéis</title>
+        <meta charset="utf8">
+
+        <style>
+            .titulo_secundario{
+                background-color: #2F4F2F; 
+                color: white;
+            }
+
+            #titulo_principal{
+                background-color: #8B6F1E;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="titulo_principal">
+            <h1>O senhor dos anéis</h1>
+            <h2>Uma das maiores trilogias da história do cinema</h2>
+        </div>
+
+        <h2 class="titulo_secundario">Contato</h2>
+
+    </body>
+    <form action="processa.php" method="get" autocomplete="off">
+        <label for="nomepessoa">Nome:</label>
+        <input type="text" name="nomepessoa" id="nomepessoa"
+        minlength="3" maxlength="15" placeholder="Informe seu nome"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="E-mail"><br><br>
+
+        <label for="ano">Ano de nascimento:</label>
+        <input type="number" id="ano" name="ano" max="2026" min="1900" placeholder="Nascimento"><br><br>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="Numero de telefone"><br><br>
+
+        <label for="github">Github</label>
+        <input type="url" name="gitbub" id="github" placeholder="Informe seu github"><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" if="senha" name="senha" placeholder="Informe sua senha"><br><br>
+
+        <label for="arquivo">Anexe um arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo"><br><br>
+
+        <label for="cor">Escolha uma cor:</label>
+        <input type="color" id="cor" name="cor"><br><br>
+
+        <fieldset>
+            <legend>Campos de tempo</legend>
+            <label for="data">Informe a data:</label>
+            <input type="date" name="data" id="mes"><br><br>
+
+            <label for="mes">Informe o mes:</label>
+            <input type="month" name="mes" id="mes"><br><br>
+
+            <label for="semana">Informe a semana:</label>
+            <input type="week" name="semana" id="semana"><br><br>
+
+            <label for="hora">Informe a hora:</label>
+            <input type="time" name="hora" id="hora"><br><br>
+
+            <label for="datahora">Data e hora atual</label>
+            <input type="datetime-local" name="datahora" id="datehora"><br><br>
+        </fieldset>
+
+        <label for="descricao">Informe o que voce gosta nos filmes</label><br>
+        <textarea cols="30" rows="10" name="descricao" id="descricao"></textarea><br><br>
+
+        <fieldset>
+            <legend >Qual seu filme favorito?</legend>
+            <label for="filme1"><input type="radio" name="filme" id="filme1" value="filme1">Filme 1</label>
+
+            <label for="filme2"><input type="radio" name="filme" id="filme2" value="filme2">Filme 2</label>
+
+            <label for="filme3"><input type="radio" name="filme" id="filme3" value="filme3">Filme 3</label>
+        </fieldset><br><br>
+
+        <label for="nivel">Escolha um nivel</label>
+        <input type="range" max="10" min="1" id="nivel" name="nivel">
+
+        <select id="lista_suspensa" name="lista">
+            <optgroup label="Teste de legenda no combobox">
+                <option value="Teste 1">Teste 1</option>
+                <option value="Teste 2">Teste 2</option>
+                <option value="Teste 3">Teste 3</option>
+            </optgroup>
+            <optgroup label="Teste de legenda no combobox 2">
+                <option value="Teste 4">Teste 4</option>
+                <option value="Teste 5">Teste 5</option>
+                <option value="Teste 6">Teste 6</option>
+            </optgroup>
+        </select><br><br>
+
+
+    </form>
+</html>
