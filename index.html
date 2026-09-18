@@ -1,48 +1,197 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>O filme o senhor dos anéis</title>
-        <meta charset="utf8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Senhor dos Anéis</title>
 
-        <style>
-            .titulo_secundario{
-                background-color: #2F4F2F; 
-                color: white;
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            background-color: #f4f4f4;
+        }
+
+        #titulo_principal {
+            background-color: #8B6F1E;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        #titulo_principal h1 {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+        }
+
+        #titulo_principal h2 {
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin-top: 8px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .titulo_secundario {
+            background-color: #2F4F2F;
+            color: white;
+            padding: 10px 20px;
+            margin: 30px 0 15px 0;
+            border-left: 6px solid #8B6F1E;
+            border-radius: 0 8px 8px 0;
+        }
+
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #8B6F1E;
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            font-size: 0.9rem;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        dl {
+            margin: 15px 0;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #2F4F2F;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-left: 25px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #2F4F2F;
+            color: #ddd;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 40px;
+            border-top: 5px solid #8B6F1E;
+        }
+
+        footer small {
+            display: block;
+            margin-top: 8px;
+            color: #aaa;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #8B6F1E, transparent);
+            margin: 30px 0;
+        }
+
+        @media (max-width: 600px) {
+            #titulo_principal h1 {
+                font-size: 1.6rem;
             }
+        }
+    </style>
+</head>
+<body>
 
-            #titulo_principal{
-                background-color: #8B6F1E;
-                color: white;
-            }
-        </style>
-    </head>
-    <body>
-        
-        <div id="titulo_principal">
-            <h1>O senhor dos anéis</h1>
-            <h2>Uma das maiores trilogias da história do cinema</h2>
-            <nav>
+    <!-- Topo do site -->
+    <header id="titulo_principal">
+        <h1>O Senhor dos Anéis</h1>
+        <h2>Uma das maiores trilogias da história do cinema</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
 
-                <a href="index.html">Home</a>
-                <a href="Contato.html">Contato</a>
-            </nav>
-        </div>
+    <!-- Conteúdo principal -->
+    <main>
 
-        <h2 class="titulo_secundario">Sinopse</h2>
+        <!-- Sinopse dos filmes -->
+        <section id="sinopse">
+            <h2 class="titulo_secundario">Sinopse</h2>
+            <article>
+                <p>
+                    <strong>O Senhor dos Anéis</strong> é uma trilogia de filmes baseada nos livros de
+                    J.R.R. Tolkien. A história acompanha o hobbit <strong>Frodo Bolseiro</strong>,
+                    que recebe a missão de destruir um poderoso anel.
+                </p>
+                <p>
+                    Esse anel pertence ao senhor do mal Sauron e possui grande poder. Frodo e seus
+                    amigos partem em uma jornada perigosa para levá-lo até a montanha onde ele foi criado.
+                    <br>
+                    Somente lá o anel pode ser destruído.
+                </p>
+            </article>
+        </section>
 
-        <p><strong>O Senhor dos Anéis</strong> é uma trilogia de filmes baseada nos livros de J.R.R.
-        Tolkien. A história acompanha o hobbit <strong>Frodo Bolseiro</strong>, que recebe a missão
-        de destruir um poderoso anel.</p>
-        
-        <p>Esse anel pertence ao senhor do mal Sauron e possui grande poder. Frodo e
-        seus amigos partem em uma jornada perigosa para levá-lo até a montanha
-        onde ele foi criado. <br> Somente lá o anel pode ser destruído.</p>
+        <!-- Imagem da trilogia -->
+        <section>
+            <h2 class="titulo_secundario">Imagem do Filme</h2>
+            <figure>
+                <img src="img/senhor_dos_aneis.png" alt="Imagem do filme O Senhor dos Anéis" width="600">
+                <figcaption>Personagens do filme O Senhor dos Anéis</figcaption>
+            </figure>
+        </section>
 
-        <h2 class="titulo_secundario">Imagem do Filme</h2>
-        <figure>
-            <img src="img/senhor_dos_aneis.png" alt="Imagem do filme o senhor dos anéis">
-            <figcaption>Personagens do filme o senhor dos anéis</figcaption>
-        </figure>    
-        <h2 class="titulo_secundario">Personagens principais</h2>
+        <!-- Personagens principais -->
+        <section id="personagens">
+            <h2 class="titulo_secundario">Personagens Principais</h2>
             <ul>
                 <li>Frodo Bolseiro</li>
                 <li>Samwise Gamgee</li>
@@ -51,28 +200,104 @@
                 <li>Legolas</li>
                 <li>Gimli</li>
             </ul>
-        <h2 class="titulo_secundario">Ordem dos filmes da trilogia</h2>
+        </section>
+
+        <!-- Ordem dos filmes -->
+        <section id="ordem">
+            <h2 class="titulo_secundario">Ordem dos Filmes da Trilogia</h2>
             <ol>
                 <li>A Sociedade do Anel (2001)</li>
                 <li>As Duas Torres (2002)</li>
                 <li>O Retorno do Rei (2003)</li>
             </ol>
-        <h2 class="titulo_secundario">Informações sobre os filmes</h2>
+        </section>
 
-        <dl>
-            <dt>Diretor</dt>
+        <!-- Informações gerais -->
+        <section id="informacoes">
+            <h2 class="titulo_secundario">Informações sobre os Filmes</h2>
+            <dl>
+                <dt>Diretor</dt>
                 <dd>Peter Jackson</dd>
-            <dt>Baseado em</dt>
+                <dt>Baseado em</dt>
                 <dd>Livro de J.R.R. Tolkien</dd>
-            <dt>Gênero</dt>
+                <dt>Gênero</dt>
                 <dd>Fantasia e aventura</dd>
-            <dt>Local da gravação</dt>
+                <dt>Local da gravação</dt>
                 <dd>Nova Zelândia</dd>
-        </dl>
+            </dl>
+        </section>
 
-        <h2 class="titulo_secundario">Curiosidades</h2>
-        <h2 class="titulo_secundario">Impacto cultural</h2>
-        <h2 class="titulo_secundario">Universo da Terra Média</h2>
-        <h2 class="titulo_secundario">Conclusão</h2>
-    </body>
+        <!-- Curiosidades -->
+        <section id="curiosidades">
+            <h2 class="titulo_secundario">Curiosidades</h2>
+            <ul>
+                <li>A trilogia foi filmada inteira na Nova Zelândia, ao longo de 438 dias.</li>
+                <li>As três partes foram gravadas simultaneamente, algo raro no cinema.</li>
+                <li>O ator Viggo Mortensen (Aragorn) quebrou dois dedos durante uma cena e continuou atuando.</li>
+                <li>A trilogia ganhou 17 estatuetas do Oscar no total.</li>
+            </ul>
+        </section>
+
+        <!-- Impacto cultural -->
+        <section id="impacto">
+            <h2 class="titulo_secundario">Impacto Cultural</h2>
+            <p>
+                <strong>O Senhor dos Anéis</strong> revolucionou o cinema de fantasia. Antes dele, filmes do
+                gênero eram vistos como produções menores. A trilogia mostrou que fantasia podia ser tratada
+                com seriedade, ter efeitos visuais impressionantes e emocionar milhões de pessoas.
+            </p>
+            <p>
+                O sucesso abriu portas para outras grandes produções, como <em>Game of Thrones</em>,
+                <em>Harry Potter</em> e <em>As Crônicas de Nárnia</em>. Além disso, popularizou a Nova
+                Zelândia como destino turístico, com fãs visitando as locações do filme até hoje.
+            </p>
+        </section>
+
+        <!-- Universo da Terra Média -->
+        <section id="terra-media">
+            <h2 class="titulo_secundario">Universo da Terra Média</h2>
+            <p>
+                A <strong>Terra Média</strong> é o mundo criado por J.R.R. Tolkien, onde se passam
+                <em>O Hobbit</em> e <em>O Senhor dos Anéis</em>. É habitada por diversas raças:
+            </p>
+            <ul>
+                <li><strong>Hobbits</strong> — pequenos, pacíficos, moram no Condado</li>
+                <li><strong>Elfos</strong> — imortais, sábios, ligados à natureza</li>
+                <li><strong>Anões</strong> — guerreiros, miners, vivem em montanhas</li>
+                <li><strong>Humanos</strong> — divididos em vários reinos</li>
+                <li><strong>Orcs e Uruk-hai</strong> — criaturas a serviço de Sauron</li>
+                <li><strong>Magos</strong> — como Gandalf e Saruman</li>
+            </ul>
+            <p>
+                A obra de Tolkien é considerada a <strong>base da fantasia moderna</strong>. Praticamente
+                todo livro, filme ou jogo de fantasia que veio depois bebeu dessa fonte.
+            </p>
+        </section>
+
+        <!-- Conclusão -->
+        <section id="conclusao">
+            <h2 class="titulo_secundario">Conclusão</h2>
+            <p>
+                <strong>O Senhor dos Anéis</strong> não é só uma trilogia de filmes — é um marco cultural.
+                Mais de 20 anos depois do lançamento, continua sendo assistido, estudado e admirado por
+                novas gerações.
+            </p>
+            <p>
+                A jornada de Frodo e Sam nos ensina sobre <strong>amizade</strong>, <strong>coragem</strong>
+                e <strong>sacrifício</strong>. Mesmo a pessoa mais simples pode mudar o destino do mundo.
+                É por isso que essa história continua sendo tão especial.
+            </p>
+        </section>
+
+        <hr>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 - Site sobre O Senhor dos Anéis.</p>
+        <small>Projeto educacional sem fins comerciais.</small>
+    </footer>
+
+</body>
 </html>

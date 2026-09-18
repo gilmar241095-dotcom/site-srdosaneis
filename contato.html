@@ -1,102 +1,333 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>O filme o senhor dos anéis</title>
-        <meta charset="utf8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Senhor dos Anéis - Contato</title>
 
-        <style>
-            .titulo_secundario{
-                background-color: #2F4F2F; 
-                color: white;
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            background-color: #f4f4f4;
+        }
+
+        #titulo_principal {
+            background-color: #8B6F1E;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        #titulo_principal h1 {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+        }
+
+        #titulo_principal h2 {
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin-top: 8px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .titulo_secundario {
+            background-color: #2F4F2F;
+            color: white;
+            padding: 10px 20px;
+            margin: 30px 0 15px 0;
+            border-left: 6px solid #8B6F1E;
+            border-radius: 0 8px 8px 0;
+        }
+
+        form {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+
+        fieldset {
+            border: 2px solid #8B6F1E;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #2F4F2F;
+            padding: 0 10px;
+            font-size: 1.1rem;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 6px;
+        }
+
+        input[type="color"] {
+            height: 50px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        input[type="range"] {
+            padding: 0;
+        }
+
+        input[type="file"] {
+            border: 2px dashed #8B6F1E;
+            background-color: #fffdf5;
+            cursor: pointer;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            background-color: #2F4F2F;
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #8B6F1E;
+        }
+
+        button[type="reset"] {
+            background-color: #666;
+            margin-left: 10px;
+        }
+
+        footer {
+            background-color: #2F4F2F;
+            color: #ddd;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 40px;
+            border-top: 5px solid #8B6F1E;
+        }
+
+        footer small {
+            display: block;
+            margin-top: 8px;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            #titulo_principal h1 {
+                font-size: 1.6rem;
             }
+        }
+    </style>
+</head>
+<body>
 
-            #titulo_principal{
-                background-color: #8B6F1E;
-                color: white;
-            }
-        </style>
-    </head>
-    <body>
-        
-        <div id="titulo_principal">
-            <h1>O senhor dos anéis</h1>
-            <h2>Uma das maiores trilogias da história do cinema</h2>
-        </div>
+    <!-- Topo do site -->
+    <header id="titulo_principal">
+        <h1>O Senhor dos Anéis</h1>
+        <h2>Uma das maiores trilogias da história do cinema</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
 
-        <h2 class="titulo_secundario">Contato</h2>
+    <!-- Conteúdo principal -->
+    <main>
 
-    </body>
-    <form action="processa.php" method="get" autocomplete="off">
-        <label for="nomepessoa">Nome:</label>
-        <input type="text" name="nomepessoa" id="nomepessoa"
-        minlength="3" maxlength="15" placeholder="Informe seu nome"><br><br>
+        <section id="contato">
+            <h2 class="titulo_secundario">Contato</h2>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="E-mail"><br><br>
+            <form action="#" method="post" autocomplete="off">
 
-        <label for="ano">Ano de nascimento:</label>
-        <input type="number" id="ano" name="ano" max="2026" min="1900" placeholder="Nascimento"><br><br>
+                <!-- Dados pessoais -->
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
 
-        <label for="telefone">Telefone</label>
-        <input type="tel" name="telefone" id="telefone" placeholder="Numero de telefone"><br><br>
+                    <label for="nomepessoa">Nome:</label>
+                    <input type="text" name="nomepessoa" id="nomepessoa"
+                           minlength="3" maxlength="15" placeholder="Informe seu nome" required>
 
-        <label for="github">Github</label>
-        <input type="url" name="gitbub" id="github" placeholder="Informe seu github"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
 
-        <label for="senha">Senha:</label>
-        <input type="password" if="senha" name="senha" placeholder="Informe sua senha"><br><br>
+                    <label for="ano">Ano de nascimento:</label>
+                    <input type="number" id="ano" name="ano" max="2026" min="1900" placeholder="Nascimento">
 
-        <label for="arquivo">Anexe um arquivo:</label>
-        <input type="file" id="arquivo" name="arquivo"><br><br>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Número de telefone">
 
-        <label for="cor">Escolha uma cor:</label>
-        <input type="color" id="cor" name="cor"><br><br>
+                    <label for="github">GitHub:</label>
+                    <input type="url" name="github" id="github" placeholder="https://github.com/seu-usuario">
 
-        <fieldset>
-            <legend>Campos de tempo</legend>
-            <label for="data">Informe a data:</label>
-            <input type="date" name="data" id="mes"><br><br>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Informe sua senha" minlength="6" required>
 
-            <label for="mes">Informe o mes:</label>
-            <input type="month" name="mes" id="mes"><br><br>
+                    <label for="busca">Busca:</label>
+                    <input type="search" id="busca" name="busca" placeholder="Pesquise algo...">
+                </fieldset>
 
-            <label for="semana">Informe a semana:</label>
-            <input type="week" name="semana" id="semana"><br><br>
+                <!-- Arquivos e cores -->
+                <fieldset>
+                    <legend>Arquivos e Cores</legend>
 
-            <label for="hora">Informe a hora:</label>
-            <input type="time" name="hora" id="hora"><br><br>
+                    <label for="arquivo">Anexe um arquivo:</label>
+                    <input type="file" id="arquivo" name="arquivo">
 
-            <label for="datahora">Data e hora atual</label>
-            <input type="datetime-local" name="datahora" id="datehora"><br><br>
-        </fieldset>
+                    <label for="cor">Escolha uma cor:</label>
+                    <input type="color" id="cor" name="cor" value="#8B6F1E">
+                </fieldset>
 
-        <label for="descricao">Informe o que voce gosta nos filmes</label><br>
-        <textarea cols="30" rows="10" name="descricao" id="descricao"></textarea><br><br>
+                <!-- Datas e horas -->
+                <fieldset>
+                    <legend>Campos de Tempo</legend>
 
-        <fieldset>
-            <legend >Qual seu filme favorito?</legend>
-            <label for="filme1"><input type="radio" name="filme" id="filme1" value="filme1">Filme 1</label>
+                    <label for="data">Informe a data:</label>
+                    <input type="date" name="data" id="data">
 
-            <label for="filme2"><input type="radio" name="filme" id="filme2" value="filme2">Filme 2</label>
+                    <label for="mes">Informe o mês:</label>
+                    <input type="month" name="mes" id="mes">
 
-            <label for="filme3"><input type="radio" name="filme" id="filme3" value="filme3">Filme 3</label>
-        </fieldset><br><br>
+                    <label for="semana">Informe a semana:</label>
+                    <input type="week" name="semana" id="semana">
 
-        <label for="nivel">Escolha um nivel</label>
-        <input type="range" max="10" min="1" id="nivel" name="nivel">
+                    <label for="hora">Informe a hora:</label>
+                    <input type="time" name="hora" id="hora">
 
-        <select id="lista_suspensa" name="lista">
-            <optgroup label="Teste de legenda no combobox">
-                <option value="Teste 1">Teste 1</option>
-                <option value="Teste 2">Teste 2</option>
-                <option value="Teste 3">Teste 3</option>
-            </optgroup>
-            <optgroup label="Teste de legenda no combobox 2">
-                <option value="Teste 4">Teste 4</option>
-                <option value="Teste 5">Teste 5</option>
-                <option value="Teste 6">Teste 6</option>
-            </optgroup>
-        </select><br><br>
+                    <label for="datahora">Data e hora atual:</label>
+                    <input type="datetime-local" name="datahora" id="datahora">
+                </fieldset>
 
+                <!-- Preferências -->
+                <fieldset>
+                    <legend>Preferências</legend>
 
-    </form>
+                    <label for="nivel">Escolha um nível (1-10):</label>
+                    <input type="range" max="10" min="1" id="nivel" name="nivel" value="5">
+
+                    <p>Qual seu filme favorito da trilogia?</p>
+                    <label><input type="radio" name="filme" value="sociedade"> A Sociedade do Anel</label>
+                    <label><input type="radio" name="filme" value="torres"> As Duas Torres</label>
+                    <label><input type="radio" name="filme" value="rei"> O Retorno do Rei</label>
+
+                    <p>Quais personagens você mais gosta?</p>
+                    <label><input type="checkbox" name="personagem1" value="frodo"> Frodo</label>
+                    <label><input type="checkbox" name="personagem2" value="sam"> Sam</label>
+                    <label><input type="checkbox" name="personagem3" value="gandalf"> Gandalf</label>
+                    <label><input type="checkbox" name="personagem4" value="aragorn"> Aragorn</label>
+                </fieldset>
+
+                <!-- Seleções -->
+                <fieldset>
+                    <legend>Seleções</legend>
+
+                    <label for="personagem_fav">Personagem favorito:</label>
+                    <select id="personagem_fav" name="personagem_fav">
+                        <optgroup label="Sociedade do Anel">
+                            <option value="frodo">Frodo Bolseiro</option>
+                            <option value="sam">Samwise Gamgee</option>
+                            <option value="gandalf">Gandalf</option>
+                        </optgroup>
+                        <optgroup label="Guerreiros">
+                            <option value="aragorn">Aragorn</option>
+                            <option value="legolas">Legolas</option>
+                            <option value="gimli">Gimli</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="cena">Cena favorita (datalist):</label>
+                    <input list="cenas" id="cena" name="cena" placeholder="Digite ou selecione...">
+                    <datalist id="cenas">
+                        <option value="A Sociedade do Anel">
+                        <option value="As Duas Torres">
+                        <option value="O Retorno do Rei">
+                        <option value="Batalha do Abismo de Helm">
+                        <option value="Batalha dos Campos de Pelennor">
+                    </datalist>
+                </fieldset>
+
+                <!-- Mensagem -->
+                <fieldset>
+                    <legend>Mensagem</legend>
+
+                    <label for="descricao">O que você mais gosta nos filmes?</label>
+                    <textarea cols="30" rows="6" name="descricao" id="descricao"
+                              placeholder="Escreva sua opinião..."></textarea>
+                </fieldset>
+
+                <button type="submit">Enviar Formulário</button>
+                <button type="reset">Limpar</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 - Site sobre O Senhor dos Anéis.</p>
+        <small>Projeto educacional sem fins comerciais.</small>
+    </footer>
+
+</body>
 </html>
